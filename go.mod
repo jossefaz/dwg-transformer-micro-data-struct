@@ -1,3 +1,3 @@
-module github.com/yossefaz/go_struct
+module github.com/yossefaz/dwg-transformer-micro-data-struct
 
 go 1.14
