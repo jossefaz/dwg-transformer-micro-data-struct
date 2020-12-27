@@ -8,8 +8,8 @@ type CAD_check_errors struct {
 }
 
 type LUT_cad_errors struct {
-	Id int
-	Func_name string
+	CombinedKey int
+	Field7 string
 }
 type Timestamp time.Time
 
@@ -32,5 +32,5 @@ func (CAD_check_errors) TableName() string {
 }
 
 func (LUT_cad_errors) TableName() string {
-	return "LUT_cad_errors"
+	return "TABLES_data"
 }
