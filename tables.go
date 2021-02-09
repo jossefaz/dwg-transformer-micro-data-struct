@@ -3,8 +3,8 @@ package go_struct
 import "time"
 
 type CAD_check_errors struct {
-	Check_status_id int
-	Error_code int
+	Check_Status_Id int
+	Error_Code int
 }
 
 type LUT_cad_errors struct {
@@ -14,21 +14,21 @@ type LUT_cad_errors struct {
 type Timestamp time.Time
 
 type Cad_check_status struct {
-	ID int
-	Status_code *int
-	Last_update Timestamp
+	Id int
+	Status_Code *int
+	Last_Update_Date Timestamp
 	Path string
-	Ref_num int
-	System_code int
+	Ref_Num int
+	System_Code int
 }
 
 
 func (Cad_check_status) TableName() string {
-	return "CAD_check_status"
+	return "CAD_Check_Status"
 }
 
 func (CAD_check_errors) TableName() string {
-	return "CAD_check_errors"
+	return "CAD_Check_Errors"
 }
 
 func (LUT_cad_errors) TableName() string {
